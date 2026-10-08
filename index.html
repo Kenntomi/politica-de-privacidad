@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .intro {
+            background: #e8f8f5;
+            border-left: 4px solid #11998e;
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            width: 6px;
+            height: 24px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 3px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .highlight-green {
+            background: #d4edda;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #155724;
+        }
+
+        .data-list {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 16px 0;
+        }
+
+        .data-list h3 {
+            font-size: 1rem;
+            color: #11998e;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .data-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #444;
+        }
+
+        .data-list li:last-child {
+            border-bottom: none;
+        }
+
+        .data-list li::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #11998e10 0%, #38ef7d10 100%);
+            border: 2px dashed #11998e50;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-card .label {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .contact-card .email {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0f766e;
+            word-break: break-all;
+        }
+
+        .contact-card .email::before {
+            content: '📧 ';
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .senati-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .senati-badge::before {
+            content: '🎓';
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 30px 24px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Documento Oficial</div>
+            <h1>Política de Privacidad</h1>
+            <p class="subtitle">Última actualización: Octubre 2026</p>
+        </header>
+
+        <div class="content">
+            <div class="intro">
+                Tu privacidad es importante para nosotros. Esta política explica qué datos recopilamos, cómo los usamos y tus derechos al respecto.
+            </div>
+
+            <section>
+                <h2>Autorización y Consentimiento</h2>
+                <p>Con <span class="highlight">tu autorización explícita</span>, la aplicación accede a tu cuenta de TikTok únicamente para los fines descritos en esta política.</p>
+            </section>
+
+            <section>
+                <h2>Datos que Recopilamos</h2>
+                <p>Solo accedemos a la siguiente información mínima y necesaria de tu perfil de TikTok:</p>
+                <div class="data-list">
+                    <h3>✅ Datos Accedidos</h3>
+                    <ul>
+                        <li>Tu <strong>nombre visible</strong> en TikTok (display name)</li>
+                        <li>Tu <strong>foto de perfil</strong> de TikTok</li>
+                        <li>Tu <strong>identificador único de TikTok</strong> (open_id)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Uso de los Datos</h2>
+                <p>Estos datos se usan <span class="highlight-green">únicamente para mostrar tu perfil</span> dentro de la aplicación. No tienen ninguna otra finalidad.</p>
+            </section>
+
+            <section>
+                <h2>No Compartimos tus Datos</h2>
+                <p><strong>No vendemos</strong> tu información personal. <strong>No compartimos</strong> tus datos con terceros, bajo ninguna circunstancia.</p>
+            </section>
+
+            <section>
+                <h2>Seguridad de los Tokens</h2>
+                <p>Los <span class="highlight">tokens de acceso</span> de TikTok se guardan de forma <strong>segura en el servidor</strong>, siguiendo las mejores prácticas de seguridad.</p>
+            </section>
+
+            <section>
+                <h2>Revocar el Acceso</h2>
+                <p>Puedes <span class="highlight-green">revocar el acceso</span> de la aplicación a tu cuenta de TikTok en <strong>cualquier momento</strong>, directamente desde la <em>configuración de TikTok</em>.</p>
+            </section>
+
+            <section>
+                <h2>Contacto</h2>
+                <p>Si tienes preguntas, inquietudes o solicitudes sobre esta Política de Privacidad, puedes contactarnos a través de:</p>
+                <div class="contact-card">
+                    <div class="label">Correo Electrónico de Contacto</div>
+                    <div class="email">marci.kenntomi@gmail.com</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Aceptación</h2>
+                <p>Al utilizar esta aplicación y otorgar el acceso, confirmas que has leído, entendido y aceptado esta Política de Privacidad en su totalidad.</p>
+            </section>
+        </div>
+
+        <footer>
+            <p>© 2026 — Proyecto Académico SENATI</p>
+            <div class="senati-badge">Proyecto Educativo SENATI</div>
+        </footer>
+    </div>
+</body>
+</html>
